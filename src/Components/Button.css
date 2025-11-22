@@ -1,0 +1,16 @@
+.Button {
+  background-color: #4caf50; /* use kebab-case in CSS */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+.Button:hover {
+  background-color: #11e462ff;
+  transform: scale(1.05); /* optional: subtle hover animation */
+}

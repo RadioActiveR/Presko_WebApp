@@ -1,0 +1,236 @@
+/* Remove default body margin */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Container */
+.signup-container {
+  width: 100%;
+  min-height: 100vh;  /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #8ad574, #6c9250);
+  /* background: linear-gradient(135deg, #064d34, #0a8b5f); */
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+/* Step Card */
+.step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* left align inputs, titles */
+  width: 90%;
+  max-width: 900px;
+  padding: 30px;
+  border-radius: 16px;
+  background: #f5f5dc;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  position: relative;
+  overflow-y: auto;
+}
+
+/* Paragraph under title */
+.step-card p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.step-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Step 1: Selection Cards */
+.card-select-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* first 2 rows 4 items, last row 2 items with span */
+  gap: 12px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.card-select-grid .select-card {
+  width: 100%;
+  min-width: 120px;
+  max-width: 180px;
+  padding: 12px 6px;
+  border-radius: 10px;
+  background: #f2f2f2;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+/* Selection cards container */
+.card-select-row {
+  text-align: center; /* centers the inline-block cards */
+  margin-bottom: 20px;
+}
+
+.select-card {
+  display: inline-block;   /* width depends on text */
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #f2f2f2;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 5px;            /* spacing between cards */
+  font-weight: bold;
+}
+
+.select-card:hover {
+  transform: scale(1.05);
+}
+
+.select-card.selected {
+  border: 2px solid #0a8b5f;
+  background: #daf7ea;
+}
+
+/* Inputs */
+.text-input,
+.select-input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Next Button */
+.next-btn {
+  padding: 8px 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-end;   /* moves to bottom right corner */
+}
+
+/* Step back button for other steps (bottom left corner) */
+.back-btn-step {
+ padding: 8px 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;   /* moves to bottom right corner */
+  margin-top: 10px;
+  margin-bottom: -30px;
+}
+
+/* Password input wrapper */
+.password-input-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.password-input-wrapper .text-input {
+  width: 100%;
+  padding: 10px 50px 10px 12px;
+  box-sizing: border-box;
+}
+
+/* Show/Hide button */
+.show-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-85%);
+  padding: 4px 8px;
+  background: #ccc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Error text */
+.error-text {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Success Screen */
+.success-check {
+  margin-top: 20px;
+  font-size: 48px;
+  color: #0a8b5f;
+  text-align: center;
+}
+
+/* Completion back button */
+.back-btn {
+  padding: 6px 12px;
+  margin-top: 20px;
+  background: #ccc;
+  color: #064d34;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: center;
+}
+
+/* Step4 / Completion Styles */
+.step4-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* center horizontally */
+  justify-content: center;    /* optional: center vertically if container allows */
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  text-align: center;         /* center all text */
+  margin: 80px auto;          /* top margin and centered horizontally */
+}
+
+.step4-card h2 {
+  margin-bottom: 10px;
+}
+
+.step4-card p {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 16px;
+}
+
+.step4-card .success-check {
+  font-size: 60px;
+  color: #0a8b5f;
+  margin-bottom: 20px;
+}
+
+.step4-card .back-btn {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.step4-card .back-btn:hover {
+  background: #11e462ff;
+}

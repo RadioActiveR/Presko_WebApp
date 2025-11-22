@@ -1,0 +1,22 @@
+.AboutPage {
+  text-align: center;
+}
+
+.AboutPage-header {
+  background-color: #6c9250;
+  min-height: 91.9vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.AboutPage-p {
+    text-align: left;
+}
+
+.AboutPage-title {
+    margin-bottom: -5px;
+}

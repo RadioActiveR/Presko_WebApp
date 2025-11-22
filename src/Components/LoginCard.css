@@ -1,0 +1,49 @@
+.LoginCard {
+  background: white;
+  width: 80%;
+  max-width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: -30px;
+}
+
+.LoginCard h2 {
+  text-align: center;
+}
+
+.LoginInput {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.LoginButton {
+  padding: 10px;
+  border: none;
+  background: #09553d;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.SignupButton {
+  padding: 10px;
+  border: none;
+  background: #11e462;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Divider {
+  text-align: center;
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
